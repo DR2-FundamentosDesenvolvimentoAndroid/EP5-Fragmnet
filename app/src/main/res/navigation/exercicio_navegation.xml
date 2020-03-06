@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/exercicio_navegation"
+    app:startDestination="@id/homeFragExercicio">
+
+    <fragment
+        android:id="@+id/contatoFragExercicio"
+        android:name="com.example.ep5_fragment.fragmentExercicio.ContatoFragExercicio"
+        android:label="fragment_contato_frag_exercicio"
+        tools:layout="@layout/fragment_contato_frag_exercicio" >
+        <action
+            android:id="@+id/action_contatoFragExercicio_to_homeFragExercicio"
+            app:destination="@id/homeFragExercicio"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/listaFragExercicio"
+        android:name="com.example.ep5_fragment.fragmentExercicio.ListaFragExercicio"
+        android:label="fragment_lista_frag_exercicio"
+        tools:layout="@layout/fragment_lista_frag_exercicio" >
+        <action
+            android:id="@+id/action_listaFragExercicio_to_homeFragExercicio"
+            app:destination="@id/homeFragExercicio"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragExercicio"
+        android:name="com.example.ep5_fragment.fragmentExercicio.HomeFragExercicio"
+        android:label="fragment_home_frag_exercicio"
+        tools:layout="@layout/fragment_home_frag_exercicio" >
+        <action
+            android:id="@+id/action_homeFragExercicio_to_contatoFragExercicio"
+            app:destination="@id/contatoFragExercicio"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/action_homeFragExercicio_to_listaFragExercicio"
+            app:destination="@id/listaFragExercicio" />
+    </fragment>
+</navigation>

@@ -14,7 +14,7 @@ class MainActivity : AppCompatActivity() {
 
         btnNavVwHome
             .setupWithNavController(
-                findNavController(R.id.fragment)
+                findNavController(R.id.fragmentHome)
         )
     }
 }
